@@ -1,0 +1,9 @@
+def joinStrings(l):
+    """
+    Input: a list
+    Return: A string with all items separated with a comma and space,
+    with and inserted before the last item
+    """
+    #method: edit last element, then return list with ', ' in between
+    l[-1] = 'and ' + l[-1]
+    return ', '.join(l)
